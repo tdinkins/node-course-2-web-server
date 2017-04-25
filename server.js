@@ -58,6 +58,14 @@ app.get('/about', (req,res) => {
     });
 });
 
+app.get('/projects', (req,res) => {
+    res.render('projects.hbs',{
+        pageTitle: 'Current Projects',
+        welcomeMessage: 'Here is list of my current projects'
+        
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
        errorMessage: "This is an error man!" 
